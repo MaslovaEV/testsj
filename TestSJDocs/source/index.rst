@@ -20,7 +20,7 @@ Contents:
    Overview
    Developers' Guide
    REST API Documentation
-   SJ_UI_Guide
+   SJ_Overview
    Glossary
    
  
