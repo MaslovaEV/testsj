@@ -21,6 +21,7 @@ Contents:
    Developers' Guide
    REST API Documentation
    SJ_Overview
+   SJ_Modules
    Glossary
    
  
