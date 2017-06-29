@@ -22,6 +22,7 @@ Contents:
    REST API Documentation
    SJ_Overview
    SJ_Modules
+   SJ_UI_Guide
    Glossary
    
  
