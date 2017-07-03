@@ -84,12 +84,14 @@ Response example::
   "statusCode": 200
  }
  
-.. Find more about:
+To read more about the platform visit the pages below:
  
-.. `Platform Architecture`_
+`Platform Architecture`_ - here the architecture of the Stream Juggler is presented, its components,connections between them, necessary services and other prerequisits for the Platform operation.
 
-.. `Modules: types, structure, pipeline`_
+`Modules: types, structure, pipeline`_ - here more information on modules is given: what module types are supported in the Platform, how they work, etc.
 
-.. `Stream Juggler REST API Guide`_
+`CRUD_REST_API_Documentation`_ - the REST API service is described here to work with the platform without the UI.
 
-.. `Stream Juggler UI Guide`_
+`Stream Juggler UI Guide`_ - the section is devoted to the UI and its basic features.
+
+
