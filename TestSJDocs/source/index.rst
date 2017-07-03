@@ -19,7 +19,7 @@ Contents:
 
    Overview
    Developers' Guide
-   REST API Documentation
+   SJ_CRUD_REST_API 
    SJ_Overview
    SJ_Modules
    SJ_UI_Guide
