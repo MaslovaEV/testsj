@@ -56,11 +56,11 @@ The modules also fulfill a **group** **checkpoint** conception. It means that al
 Get instances related to a stream (by stream name)
 -------------------------------------------------------------
 
-Request method: GET
+Request method: **GET**
 
-Request format: 
+Request format::
 
-`http://{domain}/v1/streams/{name}/related`
+ http://{domain}/v1/streams/{name}/related
  
 .. http:get:: /{domain}/v1/streams/{name}/related
 
