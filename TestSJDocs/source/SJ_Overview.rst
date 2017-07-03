@@ -58,7 +58,7 @@ Get instances related to a stream (by stream name)
 
 Request method: GET
 
-Request format: http://{domain}/v1/streams/{name}/related
+Request format: `http://{domain}/v1/streams/{name}/related`
  
 .. http:get:: /{domain}/v1/streams/{name}/related
 
