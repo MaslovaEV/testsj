@@ -17,8 +17,6 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   Overview
-   Developers' Guide
    SJ_CRUD_REST_API 
    SJ_Overview
    SJ_Modules
