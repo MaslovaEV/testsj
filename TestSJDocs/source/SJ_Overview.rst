@@ -53,40 +53,10 @@ A module handles data flow making it into streams. The data elements in a stream
 The PSP modules perform **checkpoint** and, if the module has a state, stores the variables in a state. That fulfills the idea of Platform`s fault-tolerance. In case of the live datastream processing failure the variables stored in the state are recovered and the module is restarted.
 The modules also fulfill a **group** **checkpoint** conception. It means that all producers and consumers are bunched into a group and do a checkpoint automatically fixing the current state. This is the key idea of exactly-once processing.
 
-Get instances related to a stream (by stream name)
--------------------------------------------------------------
-
-Request method: **GET**
-
-Request format::
-
- http://{domain}/v1/streams/{name}/related
- 
-.. http:get:: /{domain}/v1/streams/{name}/related
-
-.. csv-table::  Response
-  :header: "Status code",  "Description"
-  :widths: 25, 60
-
-  "200", "List of instances"
-  "404", "Stream 'kafka' has not been found."
-  "500", "Internal server error"
-
-Response example::
-
- {
-  "entity": {
-    "instances": [
-      "pingstation-output",
-      "ivan"
-    ]
-  },
-  "statusCode": 200
- }
  
 To read more about the platform visit the pages below:
  
-`Platform Architecture`_ - here the architecture of the Stream Juggler is presented, its components,connections between them, necessary services and other prerequisits for the Platform operation.
+`Stream Juggler Architecture`_ - here the architecture of the Stream Juggler is presented, its components,connections between them, necessary services and other prerequisits for the Platform operation.
 
 `Modules: types, structure, pipeline`_ - here more information on modules is given: what module types are supported in the Platform, how they work, etc.
 
