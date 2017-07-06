@@ -56,12 +56,12 @@ The modules also fulfill a **group** **checkpoint** conception. It means that al
  
 To read more about the platform visit the pages below:
  
-`Stream Juggler Architecture`_ - here the architecture of the Stream Juggler is presented, its components,connections between them, necessary services and other prerequisits for the Platform operation.
+:ref:`Stream Juggler Architecture` - here the architecture of the Stream Juggler is presented, its components,connections between them, necessary services and other prerequisits for the Platform operation.
 
-`Modules: types, structure, pipeline`_ - here more information on modules is given: what module types are supported in the Platform, how they work, etc.
+:ref:`Modules` - here more information on modules is given: what module types are supported in the Platform, how they work, etc.
 
-`CRUD_REST_API_Documentation`_ - the REST API service is described here to work with the platform without the UI.
+:ref:`CRUD_REST_API_Documentation` - the REST API service is described here to work with the platform without the UI.
 
-`Stream Juggler UI Guide`_ - the section is devoted to the UI and its basic features.
+:ref:`UI_Guide` - the section is devoted to the UI and its basic features.
 
 
