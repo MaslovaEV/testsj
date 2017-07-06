@@ -15,7 +15,7 @@ It includes an executor that processes data streams and a validator.
 
 - An executor of the module utilizes an instance/instances. An instance is a full range of settings for an exact module.
 
-An engine is required to start the module. A module can not process data streams without an engine (that is a .jar file) that launches the module and contains required configuration settings.
+An engine is required to start a module. A module can not process data streams without an engine (that is a .jar file containing required configuration settings) that launches the module ingesting raw data and sends the processed data further in the stream.
 
 The engine is getting started via a framework. 
 
@@ -40,6 +40,8 @@ The modules can be strung in a pipeline as illustrated below:
 .. figure:: _static/ModulePipeline.png
 
 In this document each module is described in detail.
+
+.. _input-module:
 
 Input module
 ----------------
@@ -106,7 +108,7 @@ InputEnvelope:
 
 - key of an envelope 
 - information about the destination 
-- "check on duplication" boolean flag 
+- "check on duplication" boolean flag (it has higher priority than 'duplicateCheck' in InputInstance)
 - message data 
 
 InputStreamingResponse: 
@@ -158,10 +160,11 @@ Example of the checking a state variable::
 ``<variable_value>`` can be any type (a user must be careful when casting a state variable value to a particular data type)
 
 2) "onMessage": 
-    It is invoked for every received message from one of the inputs that are defined within the instance. There are two possible data types of input sources - that's why there are two methods with appropriate signatures:
+    It is invoked for every received message from one of the inputs that are defined within the instance. There are two possible data types of input sources - that's why there are two methods with appropriate signatures::
+    
+``def onMessage(envelope: TStreamEnvelope[T]): Unit``
 
-  def onMessage(envelope: TStreamEnvelope[T]): Unit
-  def onMessage(envelope: KafkaEnvelope[T]): Unit
+``def onMessage(envelope: KafkaEnvelope[T]): Unit``
  
 Each envelope has a type parameter that defines the type of data in the envelope.
 
@@ -381,4 +384,3 @@ The diagram below may help you to understand the dependency of instances in the 
 .. figure:: _static/InstanceCorrelation.png
 
 The data elements in a stream are assembled in partitions. A partition is a part of a data stream allocated for convenience in operation. The streams with many partitions allow to handle the idea of parallelism properly. In such case, an engine divides existing partitions fairly among executors and it enables to scale the data processing.  
-
