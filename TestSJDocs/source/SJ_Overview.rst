@@ -39,7 +39,7 @@ The modules also fulfill a **group** **checkpoint** conception. It means that al
 
 Thus, Stream Juggler is a platform that enables high-throughput, fault-tolerant stream processing of live data streams. Data can be ingested from different sources like Kafka, or TCP sockets, and can be processed using complex algorithms. Finally, processed data can be pushed out to filesystems, external databases.
 
-.. figure: _static/Overview.png
+.. figure:: _static/Overview.png
 
 In general, the main ideas of the Stream Juggler platform are:
 
