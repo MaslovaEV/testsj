@@ -55,11 +55,11 @@ In general, the main ideas of the Stream Juggler platform are:
  
 To find more about the platform, please, visit the pages below:
 
-:ref:`Stream Juggler Architecture` - here the architecture of the Stream Juggler is presented, its components,connections between them, necessary services and other prerequisits for the Platform operation.
+:ref:`Architecture` - here the architecture of the Stream Juggler is presented, its components,connections between them, necessary services and other prerequisits for the Platform operation.
 
 :ref:`Modules` - here more information on modules is given: what module types are supported in the Platform, how they work, etc.
 
-:ref:`CRUD_REST_API_Documentation` - the REST API service is described here to work with the platform without the UI.
+:ref:`REST_API` - the REST API service is described here to work with the platform without the UI.
 
 :ref:`UI_Guide` - the section is devoted to the UI and its basic features.
 
