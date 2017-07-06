@@ -5,7 +5,7 @@ Stream Juggler (SJ) is an open source, scalable solution for real-time and batch
 
 **CEP** (Complex Event Processing) is a general concept describing software systems that are used for sophisticated processing of streams of events.
 
-.. sidebar:: *Stream** is unbounded series of events organized in the chronological way.
+**Stream** is unbounded series of events organized in the chronological way.
 
 General Concepts
 ----------------------
@@ -22,11 +22,11 @@ SJ provides a developer with **comprehensive** **API** and **UI**, which allow h
 
 The Stream Juggler provides a developer with three generic event processor types, which handle data streams:
 
-1. Input Stream Processor (ISP) – handles external inputs, does data deduplication, transforms raw data to objects, currently TCP Input Stream Processor; 
+1. **Input Stream Processor (ISP)** – handles external inputs, does data deduplication, transforms raw data to objects, currently TCP Input Stream Processor; 
 
-2. Output Stream Processor (OSP) – handles external output from event processing pipeline to external data destinations (Elasticsearch, JDBC, etc.);
+2. **Output Stream Processor (OSP)** – handles external output from event processing pipeline to external data destinations (Elasticsearch, JDBC, etc.);
 
-3. Pipeline Stream Processor (PSP) – handles data processing inside the pipeline, two types of PSP exist: 
+3. **Pipeline Stream Processor (PSP)** – handles data processing inside the pipeline, two types of PSP exist: 
 
 - Regular – the most generic processor which receives event, does some data transformation and (probably) sends transformation to the next processing step. 
 - Windowed (Batch)– the processor which organizes incoming data into batches and processing is done with sliding window. Windowed PSP may be used to implement streaming joins and processing where algorithm must observe range of input messages rather than current one. 
@@ -53,7 +53,8 @@ In general, the main ideas of the Stream Juggler platform are:
 - Able to scale horizontally to thousands of nodes
 - Relies on open source technologies
  
-.. seealso:: Read more about the platform visit the pages below:
+To find more about the platform, please, visit the pages below:
+
 :ref:`Stream Juggler Architecture` - here the architecture of the Stream Juggler is presented, its components,connections between them, necessary services and other prerequisits for the Platform operation.
 
 :ref:`Modules` - here more information on modules is given: what module types are supported in the Platform, how they work, etc.
