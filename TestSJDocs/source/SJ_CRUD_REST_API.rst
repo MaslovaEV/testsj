@@ -58,7 +58,7 @@ The data format in the body of the response is JSON.
 
 
 CRUD Rest-API for Providers
-============================
+--------------------------------
 
 .. csv-table::  Provider fields
   :header: "Field", "Format",  "Description"
@@ -83,7 +83,7 @@ Config settings must contain (<driver> is a value of the "driver" field):
 - driver.<driver>.prefix - prefix of server url: (prefix)://(host:port)/(database), one of [jdbc:mysql, jdbc:postgresql, jdbc:oracle:thin]
 
 Create a new provider
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: POST
 
@@ -136,7 +136,7 @@ Error response example::
 
 
 Get provider by name
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -183,7 +183,7 @@ Empty response example::
 
 
 Get list of all providers
-----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -231,7 +231,7 @@ Success response example::
 
 
 Get list of provider types
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -265,7 +265,7 @@ Success response example::
 
 
 Delete provider by name
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: DELETE
 
@@ -294,7 +294,7 @@ Response example::
 
 
 Test connection to provider
----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Method: GET
 
@@ -343,7 +343,7 @@ Unknown provider::
  }
 
 Get services related to a provider (by provider name)
-----------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -374,12 +374,12 @@ Response example::
 
 
 CRUD Rest-API for Services
-==========================
+------------------------------
 
 .. note:: Method PUT is not available yet
 
 Service fields
------------------
+~~~~~~~~~~~~~~~~~~~
 
 Each particular service has its own set of fields.
 
@@ -396,7 +396,7 @@ Each particular service has its own set of fields.
   "RESTful service", "REST"
 
 Elasticsearch Index (ESInd)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"""""""""""""""""""""""""""""""
 
 .. csv-table::  
    :header: "Field", "Format", "Description"
@@ -413,7 +413,7 @@ Elasticsearch Index (ESInd)
 .. note:: Provider type can be 'ES' only
 
 Kafka queue (KfkQ)
-~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""
 .. csv-table::  
   :header: "Field", "Format",  "Description"
   :widths: 20, 20, 60  
@@ -430,7 +430,7 @@ Kafka queue (KfkQ)
 .. note::  zkProvider type can be 'zookeeper' only
 
 T-streams queue (TstrQ)
-~~~~~~~~~~~~~~~~~~~~~~~
+"""""""""""""""""""""""""""""
 
 .. csv-table::  
   :header: "Field", "Format",  "Description"
@@ -446,7 +446,7 @@ T-streams queue (TstrQ)
 .. note:: provider type can be 'zookeeper' only
 
 Zookeeper Coordination (ZKCoord)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""""""""""""""
 
 .. csv-table::  
   :header: "Field", "Format",  "Description"
@@ -461,7 +461,7 @@ Zookeeper Coordination (ZKCoord)
 .. note:: provider type can be 'zookeeper' only
 
 SQL database (JDBC)
-~~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""""
 
 .. csv-table::  
   :header: "Field", "Format",  "Description"
@@ -477,7 +477,8 @@ SQL database (JDBC)
 
 
 RESTful service (REST)
-~~~~~~~~~~~~~~~~~~~~~~
+"""""""""""""""""""""""""""""
+
 .. csv-table::  
   :header: "Field", "Format",  "Description"
   :widths: 20, 20, 60
@@ -495,7 +496,7 @@ RESTful service (REST)
 .. important::  Note: * - required field.
 
 Create a new service
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: POST
 
@@ -543,7 +544,7 @@ Error response example::
 
 
 Get service by name
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -576,7 +577,7 @@ Response example::
 
 
 Get list of all services
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
 
 Request method: GET
 
@@ -618,7 +619,7 @@ Success response example::
 
 
 Get list of service types
------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -651,7 +652,7 @@ Success response example::
 
 
 Delete service by name
-----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: DELETE
 
@@ -681,7 +682,7 @@ Response example::
 
 
 Get streams and instances related to a service (by service name)
------------------------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -722,12 +723,12 @@ Response example::
  }
 
 CRUD Rest-API for Streams
-=========================
+-----------------------------------
 
 .. note::  Method PUT is not available yet
 
 Stream fields
-----------------
+~~~~~~~~~~~~~~~~~
 
 .. csv-table:: Response
    :header: "Stream type", "Field", "Format", "Description"
@@ -754,7 +755,7 @@ Stream fields
 .. note:: `*` - required field.
 
 Create a new stream
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: POST
 
@@ -801,7 +802,7 @@ Error response example::
  }
 
 Get list of all streams
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -845,7 +846,7 @@ Response example::
 
 
 Get list of streams types
------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -876,7 +877,7 @@ Success response example::
  }
 
 Get stream by name
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -922,7 +923,7 @@ Error response example::
  }
 
 Delete stream by name
-----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: DELETE
 
@@ -950,7 +951,7 @@ Response example::
 
 
 Get instances related to a stream (by stream name)
--------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -980,10 +981,10 @@ Response example::
 
 
 CRUD Rest-API for Config Settings
-====================================
+----------------------------------------
 
 Config setting fields
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. csv-table::  
   :header: "Field", "Format",  "Description"
@@ -1000,7 +1001,7 @@ Config setting name should contain digits, lowercase letters, hyphens or periods
 {config-domain} should be one of the following values: 'system', 't-streams', 'kafka', 'es', 'zk', 'jdbc'
 
 Create a new config setting
----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: POST
 
@@ -1038,7 +1039,7 @@ Response example::
 
 
 Get a config setting by name
------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
 
 Request method: GET
 
@@ -1069,7 +1070,7 @@ Response example::
  }
 
 Get all config settings for specific config domain
------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -1106,7 +1107,7 @@ Response example::
  }
 
 Delete a config setting by name
---------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: DELETE
 
@@ -1134,7 +1135,7 @@ Response example::
 
 
 Get all config settings
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
 
 Request method: GET
 
@@ -1176,7 +1177,7 @@ Response example::
 
 
 Get list of domains
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -1208,13 +1209,13 @@ Response example::
  }
 
 CRUD Rest-API for Custom Files
-==============================
+-------------------------------------------
 
 Custom jars
---------------------
+~~~~~~~~~~~~~~~~~
 
 Upload custom jar
-~~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""
 
 Request method: POST
 
@@ -1259,7 +1260,7 @@ Response example::
 
 
 Download a custom jar by file name
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""""""""""""""""""""
 
 Request method: GET
 
@@ -1288,7 +1289,7 @@ Response headers example::
   "500", "Internal server error"
 
 Download a custom jar by name and version
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"""""""""""""""""""""""""""""""""""""""""""""""
 
 Request method: GET
 
@@ -1305,7 +1306,7 @@ Request format::
   "500", "Internal server error"
 
 Delete a custom jar by file name
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"""""""""""""""""""""""""""""""""""""
 
 Request method: DELETE
 
@@ -1331,7 +1332,7 @@ Response example::
  }
  
 Delete a custom jar by name and version (from specification)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 Request method: DELETE
 
@@ -1358,7 +1359,7 @@ Response example::
 
 
 Get list of all uploaded custom jars
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"""""""""""""""""""""""""""""""""""""""""
 
 Request method: GET
 
@@ -1394,11 +1395,11 @@ Response example::
  }
 
 Custom files
--------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 Upload a custom file
-~~~~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""
 
 Request method: POST
 
@@ -1430,7 +1431,7 @@ Response example::
 
 
 Download a custom file by file name
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""""""""""""""""""""""
 
 Request method: GET
 
@@ -1459,7 +1460,7 @@ Response format for file download::
   "500", "Internal server error"
 
 Delete a custom file
-~~~~~~~~~~~~~~~~~~~~~~~
+"""""""""""""""""""""""""""""""""
 
 Request method: DELETE
 
@@ -1486,7 +1487,7 @@ Response example::
 
 
 Get list of all uploaded custom files
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"""""""""""""""""""""""""""""""""""""""""""""""
 
 Request method: GET
 
@@ -1525,10 +1526,10 @@ Response example::
 
 
 CRUD Rest-API for Modules 
-==========================
+--------------------------------------
 
 Introduction
------------------
+~~~~~~~~~~~~~~~~~
 
 This is the CRUD Rest-API for modules uploaded as jar files, instantiated and running modules as well as  for custom jar files.
 
@@ -1568,7 +1569,7 @@ The following types of modules are supported in the system:
 .. note:: `*` - required field, `**` - required for batch-streaming field
 
 Upload module
---------------------
+~~~~~~~~~~~~~~~~~~~~~
 
 Request method: POST
 
@@ -1615,7 +1616,7 @@ Response example::
 
 
 Download jar of uploaded module
------------------------------------------ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 
 Request method: GET
 
@@ -1645,7 +1646,7 @@ Response headers example::
   "500", "Internal server error"
 
 Delete uploaded module
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: DELETE
 
@@ -1675,7 +1676,7 @@ Response example::
 
 
 Get list of all uploaded modules
-------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -1714,7 +1715,7 @@ Response example::
 
 
 Get list of types of modules
-------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -1745,7 +1746,7 @@ Response example::
 
 
 Get list of all uploaded module for such type
--------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -1779,7 +1780,7 @@ Response example::
 
 
 Get specification for uploaded module
------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
 
 Request method: GET
 
@@ -1840,10 +1841,10 @@ Response example::
 
 
 CRUD Rest-API for Instances
-=================================
+--------------------------------------
 
 Get all instances
----------------------
+~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -1899,7 +1900,7 @@ Response entity: json example::
 
 
 Stream Juggler Mesos Framework Rest
-------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -1936,7 +1937,7 @@ Response entity: json example::
 
 
 Create an instance of a module
----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: POST
 
@@ -1947,7 +1948,7 @@ Request format::
 .. note:: The name of an input stream should contain the  "/split" suffix (if stream's partitions should be distributed between the tasks) or "/full" (if each task should process all partitions of the stream). The stream has a 'split' mode as default. (see `SJ_CRUD_REST_API.rst#execution-plan <Execution plan>`_)
 
 Instance fields
-~~~~~~~~~~~~~~~~
+"""""""""""""""""""""""""""""""
 
 .. csv-table::  **General instance fields**
   :header: "Field name", "Format",  "Description", "Example"
@@ -2217,7 +2218,7 @@ Json-example of a created instance::
 
 
 Execution plan
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 A created instance contains an execution plan that you don't provide. 
 
@@ -2266,7 +2267,7 @@ Json format of 'tasks' field for instance of input module::
 
 
 Stage
-----------
+~~~~~~~~~~~~~~~~~~
 
 A created instance contains a stage that you don't provide.
 
@@ -2302,7 +2303,7 @@ Json example of this field::
 
 
 Get instances related to a specific module
----------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -2333,7 +2334,7 @@ Response entity json example::
 
 
 Get all instances of a specific module
------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -2372,7 +2373,7 @@ Response entity: json example::
 
 
 Get an instance of a specific module
---------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -2389,7 +2390,7 @@ Request format::
   "500", "Internal server error"
 
 Delete an instance of a specific module
-------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: DELETE
 
@@ -2421,7 +2422,7 @@ Response example::
 
 
 Start an instance
----------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -2453,7 +2454,7 @@ Response example::
 
 
 Get the information about instance tasks
--------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -2494,7 +2495,7 @@ Response example::
 
 
 Stop an instance
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
