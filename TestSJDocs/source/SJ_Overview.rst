@@ -53,8 +53,7 @@ In general, the main ideas of the Stream Juggler platform are:
 - Able to scale horizontally to thousands of nodes
 - Relies on open source technologies
  
-To read more about the platform visit the pages below:
- 
+.. seealso:: Read more about the platform visit the pages below:
 :ref:`Stream Juggler Architecture` - here the architecture of the Stream Juggler is presented, its components,connections between them, necessary services and other prerequisits for the Platform operation.
 
 :ref:`Modules` - here more information on modules is given: what module types are supported in the Platform, how they work, etc.
