@@ -2218,7 +2218,7 @@ Json-example of a created instance::
 
 
 Execution plan
-~~~~~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""
 
 A created instance contains an execution plan that you don't provide. 
 
@@ -2267,7 +2267,7 @@ Json format of 'tasks' field for instance of input module::
 
 
 Stage
-~~~~~~~~~~~~~~~~~~
+""""""""""""""""
 
 A created instance contains a stage that you don't provide.
 
