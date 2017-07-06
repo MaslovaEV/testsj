@@ -5,7 +5,10 @@ Stream Juggler (SJ) is an open source, scalable solution for real-time and batch
 
 **CEP** (Complex Event Processing) is a general concept describing software systems that are used for sophisticated processing of streams of events.
 
-A **stream** is unbounded series of events organized in the chronological way.
+.. sidebar:: *Stream** is unbounded series of events organized in the chronological way.
+
+General Concepts
+----------------------
 
 In sophisticated processing an algorithm can overview series of events to find dependencies, correlations, trends, etc. rather than just one event in a time
 
@@ -16,25 +19,6 @@ The platform preforms a **real-time** **processing** that means the system can h
 Data queues are implemented with `Apache Kafka <https://kafka.apache.org/>`_ and `T-streams <http://t-streams.com/>`_. Kafka is a high-performance queue engine, which performs scaling very well. T-streams is another open-source queue broker project which was developed as the core of SJ-Platform. T-streams engine is designed to provide transactional, exactly-once processing across the pipeline. 
 
 SJ provides a developer with **comprehensive** **API** and **UI**, which allow him to develop event processing pipeline.
-
-Thus, Stream Juggler is a platform that enables high-throughput, fault-tolerant stream processing of live data streams. Data can be ingested from different sources like Kafka, or TCP sockets, and can be processed using complex algorithms. Finally, processed data can be pushed out to filesystems, external databases.
-
-.. figure: _static/Overview.png
-
-In general, the main ideas of the Stream Juggler platform are:
-
-- Strict exactly-once processing on arbitrary processing graph
-- Ability to build sophisticated processing graphs
-- Ready-to-use components which can be reused in different pipelines
-- Ability to decompose the task on small processing pieces and develop, upgrade and maintain them separately
-- Ready-to-use system (not constructor). 
-- Integrated REST and UI for DevOps
-- Integrated performance metrics
-- Able to scale horizontally to thousands of nodes
-- Relies on open source technologies
-
-General Concepts
-----------------------
 
 The Stream Juggler provides a developer with three generic event processor types, which handle data streams:
 
@@ -53,6 +37,21 @@ A module handles data flow making it into streams. The data elements in a stream
 The PSP modules perform **checkpoint** and, if the module has a state, stores the variables in a state. That fulfills the idea of Platform`s fault-tolerance. In case of the live datastream processing failure the variables stored in the state are recovered and the module is restarted.
 The modules also fulfill a **group** **checkpoint** conception. It means that all producers and consumers are bunched into a group and do a checkpoint automatically fixing the current state. This is the key idea of exactly-once processing.
 
+Thus, Stream Juggler is a platform that enables high-throughput, fault-tolerant stream processing of live data streams. Data can be ingested from different sources like Kafka, or TCP sockets, and can be processed using complex algorithms. Finally, processed data can be pushed out to filesystems, external databases.
+
+.. figure: _static/Overview.png
+
+In general, the main ideas of the Stream Juggler platform are:
+
+- Strict exactly-once processing on arbitrary processing graph
+- Ability to build sophisticated processing graphs
+- Ready-to-use components which can be reused in different pipelines
+- Ability to decompose the task on small processing pieces and develop, upgrade and maintain them separately
+- Ready-to-use system (not constructor). 
+- Integrated REST and UI for DevOps
+- Integrated performance metrics
+- Able to scale horizontally to thousands of nodes
+- Relies on open source technologies
  
 To read more about the platform visit the pages below:
  
