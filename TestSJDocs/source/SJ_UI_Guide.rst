@@ -1,29 +1,23 @@
 .. _UI_Guide:
 
-Stream Juggler UI Guide
+UI Guide
 =======================
+
+Overview
+--------
 
 Juggler is a real time stream processing platform designed for building both simple and complex event processing (CEP). 
 
 Juggler uses Apache Messos, Kafka and T-streams to construct scalable and flexible processing algorithms. Juggler functions on the same principle as Apache Samza, but enables exactly-once processing and provides an integrated solution with a RESTful interface, JavaScript UI and an ad hoc repository for modules, services, streams and other data processing pipeline components.
 
-Overview
---------
-
-Juggler's architecture is designed so that exactly-once processing is performed not only within a single processing block but throughout the entire sequence, starting from the moment stream events are fed to the system and up to the moment when the output data is stored to conventional data storage.
-
-The approach based on loosely coupled blocks with exactly-once processing support throughout the entire sequence allows for decomposing data processing in order to provide better modularity, performance management and simplicity in development.
-
-Juggler easily integrates with in-memory grid systems, for example, Hazelcast, Apache Ignite.
-
-The systems is available under Apache License v2. 
+.. contents:: Contents
 
 Get Started
 -----------
 
 Stream Juggler has a user-friendly UI to create a processing sequence of arbitrary complexity, watch it in action and manage it using pre-created modules with flexible functionality. 
 
-If you are a deveoper and are willing to use the platform you need to know of some prerequisites for the platform. These are required settings and engines for launching a module. Find more information about that in the `Configuration Settings`_ and the `Custom Files`_ sections of this document. And make sure the following services are deployed:
+If you are a deveoper and are willing to use the platform you need to know of some prerequisites for the platform. These are required settings and engines for launching a module. Find more information about that in the `Configuration Settings`_ and the `Custom Files`_ sections of this document. And make sure the following services are preliminarily deployed:
 
 - Mesos
 - Marathon 
@@ -48,7 +42,7 @@ A module can not process data streams without uploading an engine (that is a .ja
 
 An executor of the module utilises an instance/instances, i.e. a full range of settings for an exact handler/executor.
 
-See more information on the platform struture and architecture at the `General Concepts`_ section.
+See more information on the platform struture and architecture at the :ref:`Architecture` section.
 
 Below you will find the information on uploading your module via UI and starting data processing.
 
