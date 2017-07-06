@@ -1,3 +1,5 @@
+.. _UI_Guide:
+
 Stream Juggler UI Guide
 =======================
 
