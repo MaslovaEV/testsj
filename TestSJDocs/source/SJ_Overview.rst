@@ -5,7 +5,7 @@ Stream Juggler (SJ) is an open source, scalable solution for real-time and batch
 
 **CEP** (Complex Event Processing) is a general concept describing software systems that are used for sophisticated processing of streams of events.
 
-**Stream** is unbounded series of events organized in the chronological way.
+A **stream** is unbounded series of events organized in the chronological way.
 
 General Concepts
 ----------------------
