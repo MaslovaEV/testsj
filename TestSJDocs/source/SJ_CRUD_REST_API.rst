@@ -82,7 +82,7 @@ Config settings must contain (<driver> is a value of the "driver" field):
 - driver.<driver>.prefix - prefix of server url: (prefix)://(host:port)/(database), one of [jdbc:mysql, jdbc:postgresql, jdbc:oracle:thin]
 
 Create a new provider
-~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: POST
 
@@ -395,7 +395,7 @@ Each particular service has its own set of fields.
   "RESTful service", "REST"
 
 Elasticsearch Index (ESInd)
-""""""""""""""""""""""""""""""""""""""'
+""""""""""""""""""""""""""""""""""""""
 
 .. csv-table::  
    :header: "Field", "Format", "Description"
@@ -652,7 +652,7 @@ Success response example::
 
 
 Delete service by name
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: DELETE
 
@@ -801,7 +801,7 @@ Error response example::
  }
 
 Get list of all streams
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -922,7 +922,7 @@ Error response example::
  }
 
 Delete stream by name
-~~~~~~~~~~~~~~~~~~~~~~~~~~``
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: DELETE
 
@@ -1176,7 +1176,7 @@ Response example::
 
 
 Get list of domains
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -1614,7 +1614,7 @@ Response example::
 
 
 Download jar of uploaded module
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: GET
 
@@ -2388,7 +2388,7 @@ Request format::
   "500", "Internal server error"
 
 Delete an instance of a specific module
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Request method: DELETE
 
