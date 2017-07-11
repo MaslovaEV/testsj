@@ -92,13 +92,13 @@ Create a new provider
   
 .. http:get:: /api/v1/<object_type>/
 
-    Return a list of objects
+Return a list of objects
 
-    **limit** (optional) Defaults to 20 items, but can be set higher or lower.
-    0 will return all records, but may run afoul of
-    **Example request**:
+**limit** (optional) Defaults to 20 items, but can be set higher or lower.
+0 will return all records, but may run afoul of
+**Example request**:
 
-    .. sourcecode:: http
+.. sourcecode:: http
 
         GET /api/v1/product/?format=json&limit=50
 
