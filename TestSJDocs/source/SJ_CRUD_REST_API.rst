@@ -83,12 +83,30 @@ Config settings must contain (<driver> is a value of the "driver" field):
 
 Create a new provider
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. hlist::
+  :column: 3
+  
+  * These are the REST endpoints available to MozTrap. 
+  * These are build using the TastyPie package, 
+  * so please also refer to the TastyPie documentation for more info.
+  
+.. http:get:: /api/v1/<object_type>/
+
+    Return a list of objects
+
+    **limit** (optional) Defaults to 20 items, but can be set higher or lower.
+    0 will return all records, but may run afoul of
+    **Example request**:
+
+    .. sourcecode:: http
+
+        GET /api/v1/product/?format=json&limit=50
 
 Request method: POST
 
 Request format::
  
- /v1/providers
+ .. http:post:: /v1/providers
 
 .. csv-table::  Response
   :header: "Status code","Description"
