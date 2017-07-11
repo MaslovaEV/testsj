@@ -115,7 +115,6 @@ todo_include_todos = False
 # a list of builtin themes.
 import guzzle_sphinx_theme
 html_theme = 'guzzle_sphinx_theme'
-html_translator_class = 'guzzle_sphinx_theme.HTMLTranslator'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -129,7 +128,7 @@ html_theme_options = {
 extensions.append("guzzle_sphinx_theme")
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = [guzzle_sphinx_theme.html_theme_path()]
+html_theme_path = ['themes']
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
