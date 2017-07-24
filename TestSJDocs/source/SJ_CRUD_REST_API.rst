@@ -2545,6 +2545,6 @@ Response example::
  
  
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 
       
    SJ_REST_API_Error_Responses
