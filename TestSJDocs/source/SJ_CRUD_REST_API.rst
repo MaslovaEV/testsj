@@ -2541,3 +2541,9 @@ Response example::
      "message" : "Instance '<instance_name>' is being stopped."
   }
  }
+ 
+ 
+.. toctree::
+   :maxdepth: 2
+      
+   SJ_REST_API_Error_Responses
