@@ -2542,9 +2542,4 @@ Response example::
   }
  }
  
- 
- 
-.. toctree::
-   :maxdepth: 
-      
-   SJ_REST_API_Error_Responses
+:ref:`API_Error_Responses`
