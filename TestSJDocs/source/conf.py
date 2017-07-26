@@ -32,6 +32,7 @@ import os
 extensions = [
     'sphinx.ext.coverage',
     'sphinx.ext.imgmath',
+    'sphinx.ext.githubpages'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
