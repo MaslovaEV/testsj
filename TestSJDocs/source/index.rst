@@ -16,12 +16,8 @@ Contents:
    :maxdepth: 2
 
    SJ_Overview
-   SJ_Architecture
-   SJ_Engines
-   SJ_Modules
-   SJ_UI_Guide
-   SJ_CRUD_REST_API 
-   Glossary
+   DevelopmentIntro
+   AdminGuide
    
  
 
